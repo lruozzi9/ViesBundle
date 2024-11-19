@@ -29,7 +29,7 @@ final class VatNumberValidator extends ConstraintValidator
      */
     public function validate($value, Constraint $constraint): void
     {
-        if (empty($value)) {
+        if ($value === '') {
             return;
         }
 
